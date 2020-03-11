@@ -1,3 +1,5 @@
+
+
 = 1.Seviye Başlık
 
 Bu metin 1.seviye başlığın metnidir.
@@ -57,7 +59,7 @@ https://discuss.asciidoctor.org[Discuss Asciidoctor,role=external,window=_blank]
 
 === Internal cross references
 
-Nasıl paragraf <<paragraf>> yazılacağını öğrenin.
+Nasıl video <<Video>> ekleneceğini öğrenin.
 
 = Resimler 
 
@@ -73,7 +75,11 @@ Click image:design.jpg[Play, title="Play"] to get the party started.
 image:design.jpg[Design,150,150,role="right"] Yazılım tasarım kalıpları.
 
 = Video
-[id=videos] 
+[[video]]
+
+== Blok Video
+
+Video Ekleme Sırasında, video ismi yazılınca .adoc kapanmaktadır.
 
 == Url İle Video
 
@@ -115,13 +121,31 @@ ls -l myscript.sh
 |Çelik1
 |===
 
-[plantuml,format=svg,role=sequence]
+== Internal Cross Reference
+
+Link ile <<Video>> section'ına gidebilirsiniz.
+
+= PLANTUML ÖRNEKLERİ
+
+== CLASS DİYAGRAMI
+[plantuml,sample2,png]
 ....
 @startuml
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+Class11 <|.. Class12
+Class13 --> Class14
+Class15 ..> Class16
+Class17 ..|> Class18
+Class19 <--* Class20
+@enduml
+....
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: Another authentication Response
+== USECASE DİYAGRAMI
+[plantuml,sample,png]
+....
+@startuml
+(First usecase)
+(Another usecase) as (UC2)  
+usecase UC3
+usecase (Last\nusecase) as UC4
 @enduml
 ....
