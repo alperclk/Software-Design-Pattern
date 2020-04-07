@@ -1,7 +1,0 @@
-C:\Users\alper\source\repos\SafeSingleton\SafeSingleton\bin\Debug\SafeSingleton.exe.config
-C:\Users\alper\source\repos\SafeSingleton\SafeSingleton\bin\Debug\SafeSingleton.exe
-C:\Users\alper\source\repos\SafeSingleton\SafeSingleton\bin\Debug\SafeSingleton.pdb
-C:\Users\alper\source\repos\SafeSingleton\SafeSingleton\obj\Debug\SafeSingleton.csprojAssemblyReference.cache
-C:\Users\alper\source\repos\SafeSingleton\SafeSingleton\obj\Debug\SafeSingleton.csproj.CoreCompileInputs.cache
-C:\Users\alper\source\repos\SafeSingleton\SafeSingleton\obj\Debug\SafeSingleton.exe
-C:\Users\alper\source\repos\SafeSingleton\SafeSingleton\obj\Debug\SafeSingleton.pdb
