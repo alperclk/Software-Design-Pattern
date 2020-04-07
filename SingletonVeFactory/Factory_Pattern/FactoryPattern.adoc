@@ -1,0 +1,67 @@
+= Factory Pattern ALPER ÇELİK 160202023
+
+[plantuml,Factory,png]
+----
+Interface Sekil
+{
+ +CevreHesapla(int kenar):void
+}
+
+class Ucgen
+{
+}
+
+class Kare
+{
+}
+
+class Altigen
+{
+}
+
+class Factory
+{
++Sekildondur(String SekilAdi):Sekil
+}
+class Program
+{
++main()
+}
+
+Program .> Factory :<<ask>>
+Sekil <. Program :<<use>>
+Sekil <|.. Ucgen : <<extends>>
+Sekil <|.. Kare : <<extends>>
+Sekil <|.. Altigen : <<extends>>
+----
+
+[source,c#]
+----
+public Sekil SekilDondur(String SekilAdi)
+{
+    if (SekilAdi.Equals("Ucgen")) <1>
+    {
+        return new Ucgen(); <2>
+    }
+
+    else if (SekilAdi.Equals("Kare")) <3>
+    {
+        return new Kare(); <4>
+    }
+
+    else if (SekilAdi.Equals("Altigen")) <5>
+    {
+        return new Altigen(); <6>
+    }
+
+    return null; <7>
+}
+----
+<1> Parametrenin "Ucgen" olması durumunda girecegi blok
+<2> Ucgen nesnesi return etme
+<3> Parametrenin "Kare" olması durumunda girecegi blok
+<4> Kare nesnesi return etme
+<5> Parametrenin "Altigen" olması durumunda girecegi blok
+<6> Altigen nesnesi return etme
+<7> Hiçbir şarta uymazsa return değeri olarak null dondurulecek
+
