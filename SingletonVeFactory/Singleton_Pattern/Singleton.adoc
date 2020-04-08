@@ -4,18 +4,19 @@
 ----
 class Singleton
 {
--dondurulecek : SingletonNesne 
+-{static} dondurulecek : SingletonNesne 
 -SingletonNesne() : void
-+NesneOlustur() :SingletonNesne 
++{static}NesneOlustur() :SingletonNesne 
 }
 
 class Program
 {
 +a : SingletonNesne 
 +b : SingletonNesne 
-
++{static} Main(): void
 }
 
+Singleton -left-> Singleton
 Program .up> Singleton :<<ask>>
 Singleton .down> Program :<<return>>
 ----
