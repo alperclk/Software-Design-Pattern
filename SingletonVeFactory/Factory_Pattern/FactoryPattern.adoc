@@ -25,11 +25,12 @@ class Factory
 }
 class Program
 {
-+main()
++main():void
 }
 
-Program .> Factory :<<ask>>
-Sekil <. Program :<<use>>
+Program -> Factory :<<ask>>
+Factory -> Sekil :<<use>>
+
 Sekil <|.. Ucgen : <<extends>>
 Sekil <|.. Kare : <<extends>>
 Sekil <|.. Altigen : <<extends>>
