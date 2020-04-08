@@ -4,18 +4,18 @@
 ----
 class SingletonKupa
 {
-- counter : int
+- {static}counter : int
 - SingletonKupa() : void
-- singletonKupa : SingletonKupa
-- Lock : object
-+ KupayiAl() : SingletonKupa 
+- {static}singletonKupa : SingletonKupa
+- {static}Lock : object
++ {static}KupayiAl() : SingletonKupa 
 }
 
 class Program
 {
-+Main() : void
--BirinciKosucu() : void
--IkinciKosucu() : void
++{static}Main() : void
+-{static}BirinciKosucu() : void
+-{static}IkinciKosucu() : void
 }
 
 SingletonKupa .> Program :<<return>>
