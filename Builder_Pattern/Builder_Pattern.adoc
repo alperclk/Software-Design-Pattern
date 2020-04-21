@@ -1,0 +1,57 @@
+== Builder Pattern ALPER ÇELİK 160202023
+
+[plantuml,Builder,png]
+----
+
+Interface AracPlani
+{
++setTekerlek(int tekerlekSayisi):void
++setBoya(String renk):void
++setModel(String model):void
+}
+
+Interface AracBuilder
+{
++tekerlekTak():void
++modeliOlustur():void
++araciBoya():void
++getArac():void
+}
+
+class OyuncakArabaBuilder
+{
+-Arac arac
+}
+
+class BmwBuilder
+{
+-Arac arac
+}
+
+
+
+class Director
+{
+-Aracbuilder aracBuilder
++Director(AracBuilder aracBuilder)
++getArac:Arac
++construct():void
+}
+
+AracBuilder ..left> Arac: <<create>>
+
+class Arac
+{
+- int tekerlekSayisi
+- String renk
+- String model
++ozellikYazdir():void
+}
+
+AracBuilder --lefto Director
+
+
+AracPlani <|..  Arac: <<implements>>
+AracBuilder <|..  BmwBuilder: <<implements>>
+AracBuilder <|..  OyuncakArabaBuilder: <<implements>>
+----
