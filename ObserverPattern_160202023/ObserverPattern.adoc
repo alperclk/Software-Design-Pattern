@@ -1,0 +1,44 @@
+== Iterator Pattern ALPER ÇELİK 160202023
+
+[plantuml,ObserverPattern,png]
+----
+package OS #DDDDDD {
+Interface Subject{
++addObserver(Observer o):void
++removeObserver(Observer o):void
++notifyUpdate(Message m):void
+}
+
+Interface Observer{
++update(Message m):void
+}
+
+class MessagePublisher{
+-List<Observer> observers
+-Object MONITOR
+}
+
+class MessageSubscriber{
+String subscriberName
+}
+}
+
+class Main{
+MessageSubscriber s1
+MessageSubscriber s2
+MessageSubscriber s3
+MessagePublisher p
+}
+
+
+
+Main ..> OS: <<Use>>
+
+MessageSubscriber ..left> MessagePublisher: <<Use>>
+
+MessagePublisher ..> MessageSubscriber: <<Use>>
+
+Observer <|..  MessageSubscriber: <<implements>> 
+
+Subject <|..  MessagePublisher: <<implements>> 
+----
