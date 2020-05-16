@@ -1,0 +1,7 @@
+C:\Users\alper\source\repos\Iterator_DesignPattern\Iterator_DesignPattern\bin\Debug\Iterator_DesignPattern.exe.config
+C:\Users\alper\source\repos\Iterator_DesignPattern\Iterator_DesignPattern\bin\Debug\Iterator_DesignPattern.exe
+C:\Users\alper\source\repos\Iterator_DesignPattern\Iterator_DesignPattern\bin\Debug\Iterator_DesignPattern.pdb
+C:\Users\alper\source\repos\Iterator_DesignPattern\Iterator_DesignPattern\obj\Debug\Iterator_DesignPattern.csprojAssemblyReference.cache
+C:\Users\alper\source\repos\Iterator_DesignPattern\Iterator_DesignPattern\obj\Debug\Iterator_DesignPattern.csproj.CoreCompileInputs.cache
+C:\Users\alper\source\repos\Iterator_DesignPattern\Iterator_DesignPattern\obj\Debug\Iterator_DesignPattern.exe
+C:\Users\alper\source\repos\Iterator_DesignPattern\Iterator_DesignPattern\obj\Debug\Iterator_DesignPattern.pdb

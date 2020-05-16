@@ -1,0 +1,46 @@
+== Iterator Pattern ALPER ÇELİK 160202023
+
+[plantuml,IteratorDesignPattern,png]
+----
+
+
+
+Interface IMeyveAggregate{
++IMeyveIterator getIterator()
+}
+
+class MeyveConcreteIterator{
+-MeyveConcreteAggregate meyveler
+-int index
++MeyvceConcreteIterator(MeyveConcreteAggregate meyve)
+}
+
+Interface IMeyveIterator
+{
++Next():Meyve
++GecerliMeyve():Meyve
++BittiMi():bool
+}
+
+class MeyveConcreteAggregate{
+-List<Meyve> meyveListesi
++int meyveSayisi
++Add(Meyve m):void
++GetItem(int index):Meyve
++getIterator():IMeyveIterator
+}
+
+class Program{
+
+}
+
+
+Program -right-> IMeyveIterator
+Program -left-> IMeyveAggregate
+
+MeyveConcreteAggregate ..up> MeyveConcreteIterator
+IMeyveAggregate <|.right.  MeyveConcreteAggregate: <<implements>> 
+IMeyveIterator <|..  MeyveConcreteIterator: <<implements>>
+MeyveConcreteIterator --> MeyveConcreteAggregate
+
+----
