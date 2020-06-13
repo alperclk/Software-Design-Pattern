@@ -1,0 +1,7 @@
+C:\Users\alper\source\repos\Liskov\Liskov\bin\Debug\Liskov.exe.config
+C:\Users\alper\source\repos\Liskov\Liskov\bin\Debug\Liskov.exe
+C:\Users\alper\source\repos\Liskov\Liskov\bin\Debug\Liskov.pdb
+C:\Users\alper\source\repos\Liskov\Liskov\obj\Debug\Liskov.csprojAssemblyReference.cache
+C:\Users\alper\source\repos\Liskov\Liskov\obj\Debug\Liskov.csproj.CoreCompileInputs.cache
+C:\Users\alper\source\repos\Liskov\Liskov\obj\Debug\Liskov.exe
+C:\Users\alper\source\repos\Liskov\Liskov\obj\Debug\Liskov.pdb
