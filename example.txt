@@ -1,0 +1,33 @@
+using System;
+public class Program
+{
+	public static void Main()
+	{
+		Cat cat=new Cat();
+		cat.name="Tekir";
+		cat.weight=(Decimal)4.9;
+		cat.height=50;
+		cat.eat();
+		cat.SayName();
+	}
+	
+	public class Animal
+	{
+		public string name;
+		public decimal height;
+		public decimal weight;
+		public void eat()
+		{
+			this.weight++;
+		}
+		public void SayName()
+		{
+			Console.WriteLine("My name is "+this.name); 
+		}
+		
+	}
+	
+	public class Cat:Animal
+	{
+	}
+}
